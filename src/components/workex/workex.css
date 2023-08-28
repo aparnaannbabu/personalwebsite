@@ -1,0 +1,89 @@
+.workex_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+}
+
+.workex_container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.workex_container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.workex_container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+
+}
+
+
+.workex_content {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: grid;
+    gap: 2rem;
+}
+
+.workex_details{
+    display: flex;
+    gap: 1rem;
+}
+
+.workex_details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+    width: 1rem;
+}
+                                                                      
+.workex_points {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+
+@media screen and (max-width:1024px) {
+    .workex_container {
+        grid-template-columns: 1fr;
+
+    }
+    .workex_container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .workex_content {
+        padding: 1rem;
+    }
+
+    }
+        
+
+
+
+
+/* ================= MEDIA QUERIES (SMALL DEVICES) ===================== */
+
+@media screen and (max-width:600px) {
+    .workex_container {
+        gap: 1rem;
+
+    }
+
+    .workex_container> div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    }
